@@ -6,11 +6,13 @@ export default function Document() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="title" content="Nestar Demo" />
-        <meta name="robots" content="index, follow" />
+        <meta /* searching engine uchun */
+          name="robots"
+          content="index, follow"
+        />{" "}
         <link rel="icon" type="image/png" href="/img/logo/favicon.svg" />
-
         {/*  SEO  */}
-        <meta
+        <meta /* quyidagi keywordlar orqali search qilsa bizni platforma chiqib kelishi uchun */
           name="keyword"
           content={"nestar, nestar.uz, devex mern, mern nestjs fullstack"}
         />
@@ -18,8 +20,8 @@ export default function Document() {
           name="description"
           content={
             "Buy and sell properties anywhere anytime in South Korea. | " +
-            "Pakupayte i prodavayte nedvijimost v lyuboy tochka v Yujn iy Korea v lyuboy vremya " +
-            "In korean words"
+            "Покупайте и продавайте недвижимость в любой точке Южной Кореи в любое время. | " +
+            "대한민국 언제 어디서나 부동산을 사고팔 수 있습니다. "
           }
         />
       </Head>
